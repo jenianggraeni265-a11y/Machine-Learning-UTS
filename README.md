@@ -6,16 +6,25 @@ Project ini merupakan tugas UTS mata kuliah Machine Learning yang bertujuan untu
 Dataset yang digunakan berisi informasi seperti:
 
 fixed acidity
+
 volatile acidity
+
 citric acid
+
 residual sugar
+
 chlorides
+
 alcohol
+
 pH
+
 sulphates
+
 dan variabel kimia lainnya
 
 Target yang diprediksi adalah:
+
 quality (kualitas wine)
 
 
@@ -57,11 +66,11 @@ Tahapan EDA yang dilakukan:
 ### Hasil EDA
 
 Beberapa insight yang diperoleh:
-Dataset tidak memiliki missing values
-Tidak terdapat data duplikat
-Kualitas wine didominasi kelas 5 dan 6
-Variabel alcohol memiliki korelasi positif terhadap kualitas wine
-Variabel volatile acidity memiliki korelasi negatif terhadap kualitas wine
+1. Dataset tidak memiliki missing values
+2. Tidak terdapat data duplikat
+3. Kualitas wine didominasi kelas 5 dan 6
+4. Variabel alcohol memiliki korelasi positif terhadap kualitas wine
+5. Variabel volatile acidity memiliki korelasi negatif terhadap kualitas wine
 
 ## Data Preprocessing
 
@@ -73,91 +82,99 @@ Tahapan preprocessing yang dilakukan:
 4. Feature scaling menggunakan StandardScaler
 
 Train-Test Split
-Dataset dibagi menjadi:
-80% training
-20% validation
+
+Dataset dibagi menjadi: 80% training dan 20% validation
 
 Feature Scaling
+
 Scaling hanya dilakukan pada data training untuk menghindari data leakage.
 
 ## Algoritma Machine Learning
 
 Model yang digunakan:
+
 Logistic Regression
+
 Decision Tree
+
 Random Forest
+
 Support Vector Machine (SVM)
+
 K-Nearest Neighbor (KNN)
 
 ## Evaluasi Model
 
 Evaluasi dilakukan menggunakan:
+
 Accuracy
+
 Classification Report
+
 Confusion Matrix
+
 Hasil Accuracy
 
 ### Model	Accuracy
 Random Forest	0.616
+
 Logistic Regression	0.610
+
 Decision Tree	0.599
+
 SVM	0.593
+
 KNN	0.483
 
 ## Model Terbaik
 
-Model terbaik pada analisis ini adalah:
-Random Forest Classifier
+Model terbaik pada analisis ini adalah: Random Forest Classifier
 
 Alasan:
-Memiliki accuracy tertinggi
-Lebih stabil dibanding decision tree tunggal
-Mampu menangani hubungan non-linear antar fitur
-Mengurangi risiko overfitting
+a. Memiliki accuracy tertinggi
+b. Lebih stabil dibanding decision tree tunggal
+c. Mampu menangani hubungan non-linear antar fitur
+d. Mengurangi risiko overfitting
 
 ## Confusion Matrix
 
 Confusion matrix digunakan untuk melihat detail hasil prediksi model.
+
 Hasil menunjukkan bahwa:
 1. Sebagian besar prediksi berada pada kelas yang benar
 2. Kesalahan prediksi banyak terjadi pada kelas kualitas yang berdekatan seperti 5 dan 6
 
 ## Output Project
 
-Output akhir project berupa file:
-hasilprediksi_021.csv
+Output akhir project berupa file: hasilprediksi_021.csv
+
 Format file:
-Id
-quality
+Id, quality
 
 ## Tools dan Library
-Python
-Google Colab
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
+Python, Google Colab, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
 ## Konsep Machine Learning yang Digunakan
-Supervised Learning
-Classification
-Train-Test Split
-Feature Scaling
-Model Evaluation
-Confusion Matrix
-Accuracy Score
+a. Supervised Learning
+b. Classification
+c. Train-Test Split
+d. Feature Scaling
+e. Model Evaluation
+f. Confusion Matrix
+g. Accuracy Score
 
 ## Kesimpulan
 
 Berdasarkan hasil analisis machine learning pada dataset Wine Quality:
 
-Dataset berhasil diproses dengan baik tanpa missing values
-Random Forest memberikan performa terbaik dibanding model lainnya
-Feature scaling dan train-test split membantu meningkatkan validitas model
-Model mampu memprediksi kualitas wine dengan cukup baik berdasarkan karakteristik kimianya
+1. Dataset berhasil diproses dengan baik tanpa missing values
+2. Random Forest memberikan performa terbaik dibanding model lainnya
+3. Feature scaling dan train-test split membantu meningkatkan validitas model
+4. Model mampu memprediksi kualitas wine dengan cukup baik berdasarkan karakteristik kimianya
 
 ## Author
 Nama: Jeni Anggraeni
+
 Mata Kuliah: Machine Learning
+
 Program Studi: D3 Statistika Terapan dan Komputasi
